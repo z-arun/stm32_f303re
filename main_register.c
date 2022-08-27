@@ -6,6 +6,7 @@ int main(void)
   MX_USART2_UART_Init( );
   GPIOA->MODER |= 1<<10;
   GPIOA->BSRR |= 1<<5;
+	
   while (1)
   {
 	  HAL_Delay (300);
